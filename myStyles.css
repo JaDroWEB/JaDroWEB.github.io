@@ -188,16 +188,46 @@ input:-moz-placeholder { /* Firefox 18- */
 }
 
 .arrow{
+	transform: rotate(90deg);
+	top: 13%;
+	left: 20px;
+	}
+
+	.arrow-right{
+	transform: rotate(90deg);
 	top: 45%;
-	left: 28%;
+	left: 20px;
+	}
+
+@media screen and (min-width: 450px) {
+.arrow{
+	transform: rotate(90deg);
+	top: 17%;
+	left: 20px;
+	}
+
+	.arrow-right{
+	transform: rotate(90deg);
+	top: 48%;
+	left: 20px;
+	}
 }
 
-.arrow-right{
+@media screen and (min-width: 640px) {
+	.arrow{
+	transform: rotate(0deg);
 	top: 45%;
-	left: 59%;
+	left: 24%;
+	}
+
+	.arrow-right{
+	transform: rotate(0deg);
+	top: 45%;
+	left: 64%;
+	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 	.arrow-right{
 	top: 45%;
 	left: 61%;
@@ -233,6 +263,16 @@ input:-moz-placeholder { /* Firefox 18- */
 }
 
 
+.h-xs{
+	height: 20rem;
+}
+
+
+@media screen and (min-width: 450px) {
+	.h-xs{
+		height: 15rem;
+	}
+}
 
 /*
 section{
