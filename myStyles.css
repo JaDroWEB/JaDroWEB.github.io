@@ -158,23 +158,6 @@ footer p{
 	color: #0A0C0C;
 }
 
-input::placeholder{
-	padding-left: 20px;
-}
-
-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-   padding-left: 20px;
-}
-input::-moz-placeholder { /* Firefox 19+ */
-   padding-left: 20px;
-}
-input:-ms-input-placeholder { /* IE 10+ */
-   padding-left: 20px;
-}
-input:-moz-placeholder { /* Firefox 18- */
-   padding-left: 20px;
-}
-
 .pre-visit{
 	color: #A78ED7;
 }
