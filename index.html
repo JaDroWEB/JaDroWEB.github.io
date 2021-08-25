@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./splide-2.4.21/dist/css/splide.min.css">
     <link rel="stylesheet" href="./myStyles.css">
     <link rel="stylesheet" href="./tailwind.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,53 +24,54 @@
         </div>
     </section>
         
-    <section id="key-takeaways" class="pt-10 xl:pt-14 2xl:pt-28 flex justify-center">
-        <!-- <i class="fa fa-arrow-left p-6 my-auto pt-16 opacity-0 md:opacity-100"></i> -->
-        <div class="w-4/5 xl:w-3/5">
-            <h4 class="font-bold mb-10 text-xl sm:text-2xl text-red-600">Key Takeaways</h4>
-            <div class="flex flex-wrap justify-center">
-                <div class="cards sm:mx-2 mb-4 w-full sm:w-5/12 md:mx-0 md:mb-3.5">
-                    <header class="text-xl px-4 py-3 mb-4 sm:h-24 md:h-24 lg:mb-0 lg:pt-6 lg:px-8 lg:h-26 2xl:h-20">Start small</header>
-                    <p class="text-left px-4 mb-3 lg:pt-6 lg:px-8">Don’t wait until you develop the complete system, that’s overwhelming. Start with the highest-value use cases and work from the bottom up.</p>
-                </div>
-
-                <div class="cards sm:mx-2 mb-4 w-full md:mb-3.5 sm:w-5/12 md:mx-3.5">
-                    <header class="text-xl px-4 py-3 mb-4 sm:h-24 md:h-24 lg:mb-0 lg:pt-6 lg:px-8 lg:h-26 2xl:h-20">Focus on real-time data and daily trends</header>
-                    <p class="text-left px-4 mb-3 lg:pt-6 lg:px-8">In 2021, customer traffic in telecom stores has been missing one crucial thing - a stable trend across time. This leads to forecast uncertainty and the increased significance of real-time and daily data.</p>
-                </div>
-
-                <div class="cards sm:mx-2 mb-4 w-full sm:w-5/12 md:mx-0 md:mb-3.5">
-                    <header class="text-xl px-4 py-3 mb-4 sm:h-32 md:h-24 lg:mb-0 lg:pt-6 lg:px-8 lg:h-26 2xl:h-20">Keep creating the omnichannel experience</header>
-                    <p class="text-left px-4 mb-3 lg:pt-6 lg:px-8">Everything starts and ends with the customer. In omnichannel, the “where” a purchase occurs ceases to matter as the physical and digital worlds integrate into a network of channels.</p>
-                </div>
+    <section id="key-takeaways" class="pt-10 xl:pt-14 2xl:pt-28 justify-center">
+        <div class="w-4/5 xl:w-3/5 mx-auto">
+            <h4 class="font-bold text-red-600 mb-10 text-xl sm:text-2xl">Key Takeaways</h4>
+           
+            <div class="splide">
                 
-                <div class="cards sm:mx-2 mb-4 w-full sm:w-5/12 md:mx-0 md:mb-3.5">
-                    <header class="text-xl px-4 py-3 mb-4 sm:h-32 md:h-30 lg:mb-0 lg:pt-6 lg:px-8 lg:h-28 xl:h-32 2xl:h-28">Make your sales consultants the true brand ambassadors</header>
-                    <p class="text-left px-4 mb-3 lg:pt-6 lg:px-8">The in-store consultants need to become product experts and brand advocators. Achieve this by providing up-to-date information, training, or consultations.</p>
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide cards">
+                            <header class="text-xl pt-8 pl-8 pr-6">Start small</header>
+                            <p class="text-left pt-9 pl-8 pr-6 pb-8">Don’t wait until you develop the complete system, that’s overwhelming. Start with the highest-value use cases and work from the bottom up.</p>
+                        </div>
+        
+                        <div class="splide__slide cards">
+                            <header class="text-xl pt-8 pl-8 pr-6">Focus on real-time data and daily trends</header>
+                            <p class="text-left pt-9 pl-8 pr-6 pb-8">In 2021, customer traffic in telecom stores has been missing one crucial thing - a stable trend across time. This leads to forecast uncertainty and the increased significance of real-time and daily data.</p>
+                        </div>
+        
+                        <div class="splide__slide cards">
+                            <header class="text-xl pt-8 pl-8 pr-6">Keep creating the omnichannel experience</header>
+                            <p class="text-left pt-9 pl-8 pr-6 pb-8">Everything starts and ends with the customer. In omnichannel, the “where” a purchase occurs ceases to matter as the physical and digital worlds integrate into a network of channels.</p>
+                        </div>
+                        
+                        <div class="splide__slide cards">
+                            <header class="text-xl pt-8 pl-8 pr-6">Make your sales consultants the true brand ambassadors</header>
+                            <p class="text-left pt-9 pl-8 pr-6 pb-8">The in-store consultants need to become product experts and brand advocators. Achieve this by providing up-to-date information, training, or consultations.</p>
+                        </div>
+        
+                        <div class="splide__slide cards">
+                            <header class="text-xl pt-8 pl-8 pr-6">Avoid pushing generic, default information onto your customers</header>
+                            <p class="text-left pt-9 pl-8 pr-6 pb-8">Nowadays, true customer loyalty is built through personalized products and services.</p>
+                        </div>
+        
+                        <div class="splide__slide cards">
+                            <header class="text-xl pt-8 pl-8 pr-6">Prompt the customers to self-identify during their visit</header>
+                            <p class="text-left pt-9 pl-8 pr-6 pb-8">Without identifying the specific customers, you cannot deliver a personalized experience. When switching between channels, customers expect to pick up where they left off.</p>
+                        </div>
+        
+                        <div class="splide__slide cards">
+                            <header class="text-xl pt-8 pl-8 pr-6">Digitalize and optimize critical store processes</header>
+                            <p class="text-left pt-9 pl-8 pr-6 pb-8">The investments already made by many telecoms are to implement an online appointment scheduling for store visitors or to fully automate employee scheduling.</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="cards sm:mx-2 mb-4 w-full md:mb-3.5 sm:w-5/12 md:mx-3.5">
-                    <header class="text-xl px-4 py-3 mb-4 sm:h-32 md:h-32 lg:mb-0 lg:pt-6 lg:px-8 lg:h-28 xl:h-32 2xl:h-28">Avoid pushing generic, default information onto your customers</header>
-                    <p class="text-left px-4 mb-3 lg:pt-6 lg:px-8">Nowadays, true customer loyalty is built through personalized products and services.</p>
-                </div>
-
-                <div class="cards sm:mx-2 mb-4 w-full sm:w-5/12 md:mx-0 md:mb-3.5">
-                    <header class="text-xl px-4 py-3 mb-4 sm:h-32 md:h-32 lg:mb-0 lg:pt-6 lg:px-8 lg:h-28 xl:h-32 2xl:h-28">Prompt the customers to self-identify during their visit</header>
-                    <p class="text-left px-4 mb-3 lg:pt-6 lg:px-8">Without identifying the specific customers, you cannot deliver a personalized experience. When switching between channels, customers expect to pick up where they left off.</p>
-                </div>
-
-                <div class="md:w-1/3"></div>
-
-                <div class="cards sm:mx-2 mb-4 w-full md:mb-3.5 sm:w-5/12 md:mx-1.5 md:w-1/3">
-                    <header class="text-xl px-4 py-3 mb-4 sm:h-32 md:h-24 lg:mb-0 lg:pt-6 lg:px-8 lg:h-28 2xl:h-20">Digitalize and optimize critical store processes</header>
-                    <p class="text-left px-4 mb-3 lg:pt-6 lg:px-8">The investments already made by many telecoms are to implement an online appointment scheduling for store visitors or to fully automate employee scheduling.</p>
-                </div>
-
-                <div class="md:w-1/3"></div>
-
-            </div>
+               
+                        
+            
         </div>
-        <!-- <i class="fa fa-arrow-right p-6 my-auto pt-16 opacity-0 md:opacity-100"></i> -->
     </section>
 
     <div class="max-w-6xl mx-auto bg-white">
@@ -108,7 +110,7 @@
             <p class="mx-auto sm:-mt-8 py-8 sm:pb-14 md:-mt-0 md:py-14 max-w-lg text-lg sm:text-2xl">Telecom retail finds itself in a transitional phase. While it might not be possible to walk down to the store in person every time during the year, statistics show a positive future is in the cards for the telecom retail industry - if specific actions are carried out.</p>
         </section>
 
-        <section id=graph class="inner-container mt-0 w-4/5 mx-auto max-w-5xl lg:w-3/5">
+        <section id=graph class="inner-container mt-0 w-4/5 mx-auto max-w-5xl xl:w-3/5">
             <div class="flex items-end sm:items-start justify-between">
                 <header class="mr-10 text-lg sm:text-xl font-bold max-w-xs">The evolution of in-store visits from 2019 to 2021 in weeks</header>
                 <img src="./img/legend.svg" alt="Fig" class="w-1/6">
@@ -437,5 +439,36 @@
             <p class="w-1/2 md:w-1/4 text-right text-gray-600">&copy;2021 by Pygmalios</p>
         </footer>
     </section>
+
+    <script src="./splide-2.4.21/dist/js/splide.min.js"></script>
+    <script>
+        new Splide( '.splide', {
+            perPage: 3,
+            perMove: 2,
+            keyboard: true,
+            fixedWidth: "32%",
+            gap: "2%",
+            pagination: false,
+            breakpoints:{
+                '750':{
+                    perPage:2, 
+                    perMove:1,
+                    fixedWidth:"49%",
+                    gap:"2%"
+                },
+                '500':{
+                    perPage:1, 
+                    perMove:1,
+                    fixedWidth:"100%",
+                    gap:"0%"
+                },
+                },
+                classes: {
+                    prev  : 'splide__arrow--prev prevv',
+                    next  : 'splide__arrow--next nextt',
+                }
+        } ).mount();
+    </script>
+
 </body>
 </html>

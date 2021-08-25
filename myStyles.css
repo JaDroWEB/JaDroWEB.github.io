@@ -103,12 +103,6 @@ footer p{
     background-color: #FFFFFF;
 }
 
-@media screen and (min-width: 768px) {
-	.cards{
-		flex: 1 1 30%; 
-	}
-}
-
 .cards p{
     color: #3B3D3D;
 }
@@ -223,6 +217,14 @@ footer p{
 	.h-xs{
 		height: 15rem;
 	}
+}
+
+.prevv{
+	left: -2.5rem;
+}
+
+.nextt{
+	right: -2.5rem;
 }
 
 /*
