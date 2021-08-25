@@ -1,6 +1,7 @@
 body{
     background-color: #E5E5E5;
     font-family: Inter;
+	font-size: 16px;
 }
 
 header{
@@ -45,6 +46,10 @@ footer p{
 	background-color: #F8F7FA;
 }
 
+.gray-art{
+	background-color: #F1EFF4;
+}
+
 @media screen and (min-width: 1152px) {
 	.inner-container{
 		min-width: calc(100vw*(3/5));
@@ -60,47 +65,6 @@ footer p{
 @media screen and (min-width: 1152px) {
 	.footer-container{
 		max-width: 921.6px;
-	}
-}
-
-
-@media screen and (min-width: 640px) {
-	p, article, li{
-	font-size: 16px;
-	}
-		
-	p, article, li{
-	text-align: justify;
-	text-justify: inter-word;
-	}
-}
-
-@media screen and (max-width: 640px) {
-	p, article, li{
-	font-size: 13px;
-	}
-	
-	p, li{
-	text-align: justify;
-	text-justify: inter-word;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	#retail-shopping img{
-		width: 40%;
-	}
-	#retail-shopping article{
-		width: 60%;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	#retail-shopping img, #omnichannel-approach img{
-		width: 45%;
-	}
-	#retail-shopping article, #omnichannel-approach article{
-		width: 55%;
 	}
 }
 
