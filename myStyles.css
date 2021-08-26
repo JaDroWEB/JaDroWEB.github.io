@@ -210,6 +210,11 @@ footer p{
 	}
 }
 
+@media screen and (min-width: 1024px) {
+	#today-content .smile-left{
+	left: -40px;
+	}
+}
 
 .h-xs{
 	height: 20rem;
@@ -243,6 +248,10 @@ footer p{
 .borders{
 	border-left-width: 20px;
 	border-right-width: 20px;
+}
+
+.purple-content{
+	color: #432877;
 }
 
 /*
