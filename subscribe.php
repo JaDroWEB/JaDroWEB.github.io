@@ -1,31 +1,64 @@
 <?php
+if(!isset($_POST['submit']))
+{
+	//This page should not be accessed directly. Need to submit the form.
+	echo "error; you need to submit the form!";
+}
 
-## CONFIG ##
+$visitor_email = $_POST['Email'];
 
-# LIST EMAIL ADDRESS
-$recipient = "j.drobny@pygmalios.com";
+//Validate first
+if(empty($visitor_email)) 
+{
+    echo "Email is mandatory!";
+    exit;
+}
 
-# SUBJECT (Subscribe/Remove)
-$subject = "New newsletter subscriber";
+if(IsInjected($visitor_email))
+{
+    echo "Bad email value!";
+    exit;
+}
 
-# RESULT PAGE
-$location = "https://pygmalios.com/futureoftelco/";
+$email_from = 'j.drobny@pygmalios.com>';//<== update the email address
+$email_subject = "New newsletter subscriber";
+$email_subject = '=?utf-8?B?'.base64_encode($email_subject).'?=';
+$email_body = "E-mail of new subscriber: $visitor_email";
+    
+$to = "j.demcak@pygmalios.com, marketing@pygmalios.com";//<== update the email address
+$headers = "From: $email_from \r\n";
+$headers .= "Reply-To: $visitor_email \r\n";
+$headers .= "MIME-Version: 1.0" ."\r\n";
+$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+$headers.= "X-Mailer: PHP/" . phpversion();
 
-## FORM VALUES ##
+//Send the email!
+mail($to,$email_subject,$email_body,$headers);
+//done. redirect to thank-you page.
+header('Location: index.html');
 
-# SENDER - WE ALSO USE THE RECIPIENT AS SENDER IN THIS SAMPLE
-# DON'T INCLUDE UNFILTERED USER INPUT IN THE MAIL HEADER!
-$sender = $recipient;
 
-# MAIL BODY
-$body .= "Email: ".$_REQUEST['Email']." \n";
-# add more fields here if required
-
-## SEND MESSGAE ##
-
-mail( $recipient, $subject, $body, "From: $sender" ) or die ("Mail could not be sent.");
-
-## SHOW RESULT PAGE ##
-
-header( "Location: $location" );
+// Function to validate against any email injection attempts
+function IsInjected($str)
+{
+  $injections = array('(\n+)',
+              '(\r+)',
+              '(\t+)',
+              '(%0A+)',
+              '(%0D+)',
+              '(%08+)',
+              '(%09+)'
+              );
+  $inject = join('|', $injections);
+  $inject = "/$inject/i";
+  if(preg_match($inject,$str))
+    {
+    return true;
+  }
+  else
+    {
+    return false;
+  }
+}
+   
 ?>
