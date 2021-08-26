@@ -170,31 +170,43 @@ footer p{
 	}
 }
 
+@media screen and (min-width: 640px) {
+	#today-content .arrow{
+	transform: rotate(0deg);
+	top: -4%;
+	left: 75%;
+	}
+
+	#today-content .arrow-right{
+	transform: rotate(0deg);
+	top: -4%;
+	left: 80%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#today-content .arrow{
+	transform: rotate(0deg);
+	top: -7%;
+	left: 65%;
+	}
+
+	#today-content .arrow-right{
+	transform: rotate(0deg);
+	top: -7%;
+	left: 70%;
+	}
+}
+
 .smile-left{
 	left: -30px;
 	top: 5px;
-}
-
-.smile-middle{
-	left: -12px;
-}
-
-.smile-right{
-	left: 10px;
 }
 
 
 @media screen and (min-width: 1024px) {
 	.smile-left{
 	left: -40px;
-	}
-
-	.smile-middle{
-	left: -1px;
-	}
-
-	.smile-right{
-	left: 40px;
 	}
 }
 
@@ -226,6 +238,11 @@ footer p{
 	.nextt{
 		right: -2.5rem;
 	}
+}
+
+.borders{
+	border-left-width: 20px;
+	border-right-width: 20px;
 }
 
 /*
