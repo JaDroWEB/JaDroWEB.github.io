@@ -28,10 +28,6 @@ li{
 	list-style-type: circle;
 }
 
-form{
-	background-color: #57329D;
-}
-
 footer p{
 	color: #A78ED7
 }
@@ -252,6 +248,11 @@ footer p{
 
 .purple-content{
 	color: #432877;
+}
+
+
+.form-bg{
+	background-color: #57329D;
 }
 
 /*
