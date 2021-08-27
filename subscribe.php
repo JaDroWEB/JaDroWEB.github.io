@@ -20,12 +20,12 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'marketing@pygmalios.com>';//<== update the email address
+$email_from = '<marketing@pygmalios.com>';//<== update the email address
 $email_subject = "New newsletter subscriber";
 $email_subject = '=?utf-8?B?'.base64_encode($email_subject).'?=';
 $email_body = "E-mail of new subscriber: $visitor_email";
     
-$to = "j.demcak@pygmalios.com, marketing@pygmalios.com";//<== update the email address
+$to = "<j.drobny@pygmalios.com>";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 $headers .= "MIME-Version: 1.0" ."\r\n";
