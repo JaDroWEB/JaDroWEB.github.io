@@ -20,7 +20,7 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'info@pygmalios.com>';//<== update the email address
+$email_from = 'marketing@pygmalios.com>';//<== update the email address
 $email_subject = "New newsletter subscriber";
 $email_subject = '=?utf-8?B?'.base64_encode($email_subject).'?=';
 $email_body = "E-mail of new subscriber: $visitor_email";
