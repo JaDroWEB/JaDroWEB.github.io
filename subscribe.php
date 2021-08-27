@@ -26,7 +26,7 @@ $email_subject = "New newsletter subscriber";
 $email_subject = '=?utf-8?B?'.base64_encode($email_subject).'?=';
 $email_body = "Email of new subscriber: $visitor_email";
     
-$to = "f.matusak@pygmalios.com";//<== update the email address
+$to = "f.matusak@pygmalios.com, j.drobny@pygmalios.com";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 $headers .= "MIME-Version: 1.0" ."\r\n";
