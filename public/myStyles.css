@@ -169,13 +169,13 @@ footer p{
 @media screen and (min-width: 640px) {
 	#today-content .arrow{
 	transform: rotate(0deg);
-	top: -4%;
-	left: 75%;
+	top: -6%;
+	left: 70%;
 	}
 
 	#today-content .arrow-right{
 	transform: rotate(0deg);
-	top: -4%;
+	top: -6%;
 	left: 80%;
 	}
 }
@@ -184,13 +184,13 @@ footer p{
 	#today-content .arrow{
 	transform: rotate(0deg);
 	top: -7%;
-	left: 65%;
+	left: 60%;
 	}
 
 	#today-content .arrow-right{
 	transform: rotate(0deg);
 	top: -7%;
-	left: 70%;
+	left: 73%;
 	}
 }
 
@@ -242,10 +242,16 @@ footer p{
 }
 
 .borders{
-	border-left-width: 20px;
-	border-right-width: 20px;
+	border-left-width: 0px;
+	border-right-width: 0px;
 }
 
+@media screen and (min-width: 640px) {
+	.borders{
+		border-left-width: 20px;
+		border-right-width: 20px;
+	}
+}
 .purple-content{
 	color: #432877;
 }
