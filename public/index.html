@@ -20,6 +20,14 @@
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <title>The (R)Evolution of Telecom Retail Store: A Step into the Future</title>
     <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=613088b938d3130012bc0d25&product=sop' async='async'></script>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+        }
+    </script>
+
 <body>
 <div class="max-w-screen-2xl mx-auto">
     
@@ -271,9 +279,9 @@
         <section class="form-bg w-full inner-container md:rounded-lg md:mx-auto md:w-4/5 xl:w-3/5">
             <div class="mt-0 mx-auto max-w-5xl w-5/6 sm:w-4/5 md:w-full md:px-10 flex flex-wrap md:flex-nowrap">
                 <p class="text-white pb-4 pt-8 md:pt-0 md:pb-0 md:pr-8 md:w-7/12 md:my-9"><strong>Stay one step ahead</strong> and access the latest content on the future of telecom retail store.</p>
-                <form method="POST" action="./subscribe.php" class="w-full mb-10 md:my-auto flex flex-wrap md:flex-nowrap">
+                <form id="demo-form" method="POST" action="./subscribe.php" class="w-full mb-10 md:my-auto flex flex-wrap md:flex-nowrap">
                     <input type="text" name="Email" size="20" placeholder="Enter e-mail" class="pl-5 mx-0 w-full rounded-full h-12 md:rounded-r-none md:rounded-l-full">
-                    <input type="submit" value="Subscribe" name="Submit" class="button cursor-pointer rounded-full px-3 w-full mt-5 md:mt-0 mx-0 md:w-28 h-12 text-center md:rounded-l-none md:rounded-r-full font-bold">
+                    <button data-sitekey="6LdOsj0cAAAAAGusrRWRMRvVk9OF75nnnxdKiy3e" data-callback='onSubmit' data-action='submit' type="submit" name="Submit" class="g-recaptcha button cursor-pointer rounded-full px-3 w-full mt-5 md:mt-0 mx-0 md:w-28 h-12 text-center md:rounded-l-none md:rounded-r-full font-bold">Subscribe</button>
                 </form>
             </div>
         </section>
