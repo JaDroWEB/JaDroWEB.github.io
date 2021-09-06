@@ -21,6 +21,14 @@ if(IsInjected($visitor_email))
     exit;
 }
 
+$captcha = checkReCaptcha();
+if (is_object($captcha) and isset($captcha->score) and $captcha->score < 0.5 and $captcha->action == 'newsletter1' || 'newsletter2') {
+  echo "Bad recaptcha check!";
+  exit;
+}
+
+
+
 $email_from = '';//<== update the email address
 $email_subject = "New newsletter subscriber";
 $email_subject = '=?utf-8?B?'.base64_encode($email_subject).'?=';
@@ -61,5 +69,29 @@ function IsInjected($str)
     return false;
   }
 }
+
+
+
+function checkReCaptcha()
+    {
+        $response = null;
+
+        if (isset($_POST['recaptcha_token']) and !empty($_POST['recaptcha_token'])) {
+            // Build POST request:
+            $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+            $recaptcha_secret = '6LdOsj0cAAAAAHOkfvlWkV6s7NgiWFlTGJNJDRM8';
+            $recaptcha_response = $_POST['recaptcha_token'];
+
+            // Make and decode POST request:
+            $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
+            $recaptcha = json_decode($recaptcha);
+
+            $response = $recaptcha;
+        }
+
+        return [
+            'response' => $response,
+        ];
+    }
    
 ?> 
