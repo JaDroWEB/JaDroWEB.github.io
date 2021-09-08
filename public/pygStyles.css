@@ -283,16 +283,19 @@ footer p{
 	.prevv{
 		left: 83.5%;
 	}
-	
+}	
+
 @media screen and (min-width: 1024px) {
 	.prevv{
 		left: 87%;
 	}
+}
 	
 @media screen and (min-width: 1500px) {
 	.prevv{
 		left: 90%;
 	}
+}
 
 .borders{
 	border-left-width: 0px;
