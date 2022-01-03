@@ -1,0 +1,318 @@
+body{
+    background-color: #F8F7FA;
+    font-family: Inter;
+	font-size: 16px;
+}
+
+header{
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    color: #713ADA;
+}
+ 
+hr{
+	border-color: #8D61E1;
+    border-width: 4px;
+}
+
+article{
+	background-color: #F1EFF4;
+}
+
+article span{
+	color: #8E7EAD;
+}
+
+li{
+	list-style-type: circle;
+}
+
+footer p{
+	color: #A78ED7
+}
+
+
+
+#top{
+    background-color: #432877;
+}
+
+#intro h1{
+	line-height: 1.2;
+}
+
+#sample-telecom, .gray-background{
+	background-color: #F8F7FA;
+}
+
+#sample-telecom p{
+	color: #666666;
+}
+
+#future hr, #today hr{
+	border-color: #D6D2DC;
+}
+
+.gray-art{
+	background-color: #F1EFF4;
+}
+
+@media screen and (min-width: 1152px) {
+	.inner-container{
+		min-width: calc(100vw*(3/5));
+	}
+}
+
+@media screen and (min-width: 1536px) {
+	.inner-container{
+		min-width: calc(1536px*(3/5));
+	}
+}
+
+@media screen and (min-width: 1152px) {
+	.footer-container{
+		max-width: 921.6px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.top-image{
+		width: 440px;
+		left: 41%;
+		top: 310px;
+		}
+	}
+
+@media screen and (min-width: 1024px) {
+  .top-image{
+    width: 540px;
+	left: 42%;
+    top: 350px;
+	}
+}
+
+@media screen and (min-width: 1536px) {
+	.top-image{
+    width: 610px;
+	left: 48%;
+    top: 290px;
+	}
+}
+
+.purple{
+	color: #E3D8F8;
+}
+
+.cards{
+    border: 1px solid #E7E5EB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+.cards p{
+    color: #3B3D3D;
+}
+
+.describe-graph{
+	color: #666666;
+}
+
+.link{
+	color: #713ADA;
+}
+
+.button{
+	background-color: #FFDC30;
+	color: #0A0C0C;
+}
+
+.pre-visit{
+	color: #A78ED7;
+}
+
+.during-the-visit{
+	color: #8A69CA;
+}
+
+.post-visit{
+	color: #6D43BD;
+}
+
+.arrow{
+	transform: rotate(90deg);
+	}
+
+.arrow-right{
+	transform: rotate(90deg);
+	}
+
+@media screen and (min-width: 640px) {
+	.arrow{
+	transform: rotate(0deg);
+	top: -3%;
+	left: 75%;
+	}
+
+	.arrow-right{
+	transform: rotate(0deg);
+	top: -3%;
+	left: 85%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.arrow{
+	transform: rotate(0deg);
+	top: -4%;
+	left: 65%;
+	}
+
+	.arrow-right{
+	transform: rotate(0deg);
+	top: -4%;
+	left: 74%;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.arrow{
+	transform: rotate(0deg);
+	top: -4%;
+	left: 68%;
+	}
+
+	.arrow-right{
+	transform: rotate(0deg);
+	top: -4%;
+	left: 85%;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	#today-content .arrow{
+	transform: rotate(0deg);
+	top: -5%;
+	left: 70%;
+	}
+
+	#today-content .arrow-right{
+	transform: rotate(0deg);
+	top: -5%;
+	left: 84%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#today-content .arrow{
+	transform: rotate(0deg);
+	top: -7%;
+	left: 60%;
+	}
+
+	#today-content .arrow-right{
+	transform: rotate(0deg);
+	top: -7%;
+	left: 73%;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	#today-content .arrow{
+	transform: rotate(0deg);
+	top: -6%;
+	left: 68%;
+	}
+
+	#today-content .arrow-right{
+	transform: rotate(0deg);
+	top: -6%;
+	left: 85%;
+	}
+}
+
+.smile-left{
+	left: -30px;
+	top: 5px;
+}
+
+
+@media screen and (min-width: 1024px) {
+	.smile-left{
+	left: -40px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#today-content .smile-left{
+	left: -40px;
+	}
+}
+
+.h-xs{
+	height: 20rem;
+}
+
+
+@media screen and (min-width: 450px) {
+	.h-xs{
+		height: 15rem;
+	}
+}
+
+.prevv{
+	left: 80%;
+	top: -3.2rem;
+	background: none;
+	width: auto;
+	opacity: 1;
+	height: auto;
+}
+
+.nextt{
+	right: 0%;
+	top: -3.2rem;
+	background: none;
+	width: auto;
+	opacity: 1;
+	height: auto;
+}
+
+@media screen and (min-width: 550px) {
+	.prevv{
+		left: 83.5%;
+	}
+}	
+
+@media screen and (min-width: 1024px) {
+	.prevv{
+		left: 87%;
+	}
+}
+	
+@media screen and (min-width: 1500px) {
+	.prevv{
+		left: 90%;
+	}
+}
+
+.borders{
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+
+@media screen and (min-width: 640px) {
+	.borders{
+		border-left-width: 20px;
+		border-right-width: 20px;
+	}
+}
+.purple-content{
+	color: #432877;
+}
+
+
+.form-bg{
+	background-color: #57329D;
+}
